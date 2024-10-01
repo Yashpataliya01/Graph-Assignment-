@@ -1,0 +1,177 @@
+.header {
+  min-width: 270px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.logos {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+
+.icons, .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 25px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.iconSvg {
+  stroke: #000000;
+  transition: stroke 0.3s ease;
+}
+
+.icon:hover .iconSvg {
+  stroke: #ffd37f;
+}
+
+.notificationdot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #81cbe9;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  box-shadow: 0 0 6px rgba(127, 223, 255, 0.8);
+}
+
+.line {
+  width: 1px;
+  height: 25px;
+  background-color: #000;
+  margin-right: 15px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffd37f;
+}
+
+.profile h4 {
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+}
+
+.profile h4 span {
+  font-weight: 600;
+}
+
+.chevronIcon {
+  position: relative;
+  top: 6px;
+}
+
+.menu {
+  position: absolute;
+  top: 60px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu ul li:hover {
+  background-color: #f7f7f7;
+}
+.btn{
+display: none;
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0 15px;
+  }
+
+  .logos .logo {
+    font-size: 20px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .profile img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .menu {
+    top: 50px;
+    width: 150px;
+  }
+  .btn{
+    display: block;
+  }
+}
+
+@media (max-width: 530px) {
+  .icons, hr {
+    display: none;
+  }
+
+  .profile h4 {
+    font-size: 14px;
+  }
+}
