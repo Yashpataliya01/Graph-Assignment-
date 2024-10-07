@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Datachart.module.css";
 const Datachart = ({ cryptoData = [] }) => {
   const validData = Array.isArray(cryptoData) ? cryptoData : [];
-  console.log(validData, "chut");
   return (
     <div className={styles.activity}>
       <div className={styles.header}>

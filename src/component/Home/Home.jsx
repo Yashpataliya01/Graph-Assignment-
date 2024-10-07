@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.css";
-import Bargraph from "../Graphs/Bargraph";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../Redux/Features/Coindata/Coindataslice.js";
 import Piechart from "../Graphs/Piechart.jsx";
+import Bargraph from "../Graphs/Bargraph";
 import MultilineChart from "../Graphs/Linechart.jsx";
 import Datachart from "../Graphs/Datachart.jsx";
 
